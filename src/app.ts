@@ -17,6 +17,6 @@ app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 app.use("/todos", todoRoutes);
 
 app.listen(PORT, async () => {
-	// await connectDatabase();
+	await connectDatabase();
 	console.log(`Server running on port ${PORT}`);
 });
